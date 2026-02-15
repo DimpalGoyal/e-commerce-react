@@ -1,20 +1,14 @@
-import { ProductCard } from "../components/Product-card";
+import { ProductCard } from "../components/Product-card.jsx";
+import { getProducts } from "../data/products.js";
 
 export default function Home() {
+  const products = getProducts()
   return (
     <>
-      <div className="home">
-        <h1>home page</h1>
-        <div className="home-container" style={{display:"flex"}}>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-        </div>
+      <div style={{display:"grid", gridTemplateColumns: "repeat(3, 1fr)", gap:"1px" }}>
+      {products.map((product)=>(
+        <ProductCard key={product.id} product={product}/>
+      ))}
       </div>
     </>
   );
