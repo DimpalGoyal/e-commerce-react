@@ -1,13 +1,20 @@
 
-import './App.css'
-import { Route, Router, Link } from 'react-router-dom'
+// import './App.css'
+import { Route, Routes, Link } from 'react-router-dom'
+import Home from './pages/Home.jsx'
+import Auth from './pages/Auth.jsx'
+import Checkout from './pages/Checkout.jsx'
+import Navbar from './components/navbar.jsx'
 
 function App() {
   return (
     <>
-      <Router>
-        <Route></Route>
-      </Router>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/auth' element={<Auth/>} />
+        <Route path='/checkout' element={<Checkout/>} />
+      </Routes>
 
     </>
   )
