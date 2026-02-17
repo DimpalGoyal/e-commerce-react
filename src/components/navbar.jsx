@@ -19,8 +19,8 @@ export default function Navbar() {
           <Link to="/checkout">Checkout</Link>
         </div>
         <div style={{ display: "flex", gap: "10px" }}>
-          <Link to="/auth">sign in</Link>
-          <Link to="/auth">sign up</Link>
+          <Link to="/auth">Sign In</Link>
+          <Link to="/auth">Sign Up</Link>
         </div>
       </nav>
     </>
