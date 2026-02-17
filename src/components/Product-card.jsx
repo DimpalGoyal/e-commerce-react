@@ -1,4 +1,5 @@
-import { getProducts } from "../data/products";
+import { Link } from "react-router-dom";
+import './card.css'
 
 export const ProductCard = ({product}) => {
   return (
@@ -9,6 +10,10 @@ export const ProductCard = ({product}) => {
               <img src={product.src} width={150} />
               <h4>{product.name}</h4>
               <h5>{product.price}</h5>
+            </div>
+            <div className="btn-actions" style={{display:"flex", gap:"50px"}}>
+              <Link to="/details" className="btn-sec">view details</Link>
+              <button className="btn-pri">add to cart</button>
             </div>
         </div>
       </div>
