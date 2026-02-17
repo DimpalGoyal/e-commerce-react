@@ -1,6 +1,6 @@
 
 // import './App.css'
-import { Route, Routes, Link } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Auth from './pages/Auth.jsx'
 import Checkout from './pages/Checkout.jsx'
