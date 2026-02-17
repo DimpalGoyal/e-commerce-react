@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 
+/**
+ * Render a top navigation bar with links to Home, Checkout, Sign in, and Sign up.
+ *
+ * @returns {JSX.Element} A nav element containing left-aligned Home and Checkout links and right-aligned sign in and sign up links.
+ */
 export default function Navbar() {
   return (
     <>

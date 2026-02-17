@@ -64,6 +64,10 @@ const products = [
   },
 ];
 
+/**
+ * Retrieve the list of available products.
+ * @returns {Array<{id: number, name: string, price: number, src: string}>} Array of product objects with properties `id`, `name`, `price`, and `src`.
+ */
 export function getProducts(){
     return products;
 }
