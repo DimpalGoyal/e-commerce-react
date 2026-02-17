@@ -12,7 +12,7 @@ export const ProductCard = ({product}) => {
               <h5>{product.price}</h5>
             </div>
             <div className="btn-actions" style={{display:"flex", gap:"50px"}}>
-              <Link to="/details" className="btn-sec">view details</Link>
+              <Link to={`/products/${product.id}`} className="btn-sec">view details</Link>
               <button className="btn-pri">add to cart</button>
             </div>
         </div>
